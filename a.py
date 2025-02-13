@@ -3,7 +3,7 @@ from PIL import Image
 
 
 # URL trỏ đến trang HTML chứa danh sách liên kết
-data = "https://ubndcattuong.github.io/datdaimoitruong/"  # Thay bằng URL online nếu đã upload
+data = "https://ubndcattuong.github.io/vanhoatheduc/"  # Thay bằng URL online nếu đã upload
 
 # Tạo mã QR
 qr = qrcode.QRCode(
@@ -39,6 +39,6 @@ img_with_logo = img.convert('RGBA')
 img_with_logo.paste(logo, logo_position, logo)  # Sử dụng alpha channel của logo
 
 # Lưu mã QR có hình ảnh
-img_with_logo.save("Phòng Đ,Đ, MT.png")
+img_with_logo.save("Văn Hóa Thể Dục Thể Thao.png")
 
 print("Mã QR đã được tạo và lưu thành công!")
